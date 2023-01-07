@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-    height: 90vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,6 +70,14 @@ h1 {
     .pre-header {
         font-size: 1.1rem;
     }
+}
+
+.footer {    
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .footer-link {    
