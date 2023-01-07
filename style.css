@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    background-color: #e3e4e8;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vh;
+    font-family: Inter, Sans serif;
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
+}
+
+h1 {
+    text-align: center;    
+    text-transform: uppercase;
+}
+
+.main-header {
+    font-size: 2.6rem;
+    font-weight: 800;
+    
+    animation: background-pan 1.3s linear infinite;
+    background: linear-gradient(to right, #3b7a78, #28534e, #24453e, #28534e, #3b7a78);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-size: 200%;
+}
+
+.pre-header {
+    color: #0d1117;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    margin-bottom: 5px;
+}
+
+p {    
+    margin-top: 18px;
+    color: #0d11178e;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+@media (max-width: 400px) {
+    .main-header {        
+        font-size: 2.1rem;
+    }
+
+    .pre-header {
+        font-size: 1.1rem;
+    }
+}
