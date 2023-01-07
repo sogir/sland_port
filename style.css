@@ -5,14 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-    background-color: #e3e4e8;
+    background-color: #e3e4e8;    
+    font-family: Inter, Sans serif;
+}
 
+.container {
+    height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     
-    height: 100vh;
-    font-family: Inter, Sans serif;
 }
 
 @keyframes background-pan {
@@ -51,9 +54,9 @@ h1 {
     margin-bottom: 5px;
 }
 
-p {    
+.greeting {    
     margin-top: 18px;
-    color: #0d11178e;
+    color: #74777c;
     font-size: 1.2rem;
     text-align: center;
     font-weight: 400;
@@ -67,4 +70,27 @@ p {
     .pre-header {
         font-size: 1.1rem;
     }
+}
+
+.footer-link {    
+    margin-top: 18px;
+    color: #74777c;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.footer-link a {
+    color: #74777c;
+    text-decoration: none;
+}
+
+.footer-link > a:hover {
+    color: #0d1117;
+    text-decoration: underline;
+}
+
+
+.footer-link > a:focus {
+    color: #0d1117;
 }
